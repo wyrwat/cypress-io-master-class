@@ -2,7 +2,6 @@
 
 describe("Handling IFrame & Modals", () => {
   it.only("Handle webdriveruni iframe and modal", () => {
-    // cy.visit("http://www.webdriveruniversity.com/Contact-Us/contactus.html");
     cy.visit("http://www.webdriveruniversity.com");
     cy.get("#iframe").invoke("removeAttr", "target").click({ force: true });
     cy.get("#frame").then(($iframe) => {
